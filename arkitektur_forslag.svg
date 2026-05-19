@@ -1,0 +1,101 @@
+<svg width="100%" viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg" style="background:#1a1a2e">
+  <title>Foreslått sanntidsarkitektur — kjøretøysentrert modell</title>
+
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#667eea"/>
+      <stop offset="100%" style="stop-color:#764ba2"/>
+    </linearGradient>
+    <linearGradient id="vehicleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d2d5e"/>
+      <stop offset="100%" style="stop-color:#1a1a3e"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Title bar -->
+  <rect x="0" y="0" width="800" height="50" fill="url(#headerGrad)" rx="0"/>
+  <text x="400" y="32" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="700" fill="white">🚆 Kjøretøysentrert sanntidsarkitektur</text>
+
+  <!-- VEHICLE BOX -->
+  <rect x="40" y="70" width="720" height="200" rx="12" fill="url(#vehicleGrad)" stroke="#667eea" stroke-width="1.5" opacity="0.95"/>
+  <text x="60" y="98" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#a8b4ff">🚃 KJØRETØY (Operatørens ansvar)</text>
+  <text x="720" y="98" text-anchor="end" font-family="system-ui, sans-serif" font-size="11" fill="#888" font-style="italic">Vehicle ID: VY-BM74-2148</text>
+
+  <!-- Sensor boxes inside vehicle -->
+  <rect x="65" y="115" width="110" height="55" rx="8" fill="#2a4a3a" stroke="#4ade80" stroke-width="1"/>
+  <text x="120" y="140" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#4ade80">📡 WiFi-GPS</text>
+  <text x="120" y="157" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#86efac">Router ombord</text>
+
+  <rect x="190" y="115" width="110" height="55" rx="8" fill="#2a4a3a" stroke="#4ade80" stroke-width="1"/>
+  <text x="245" y="140" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#4ade80">🛰️ Sikr.GPS</text>
+  <text x="245" y="157" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#86efac">Teknisk skap</text>
+
+  <rect x="315" y="115" width="110" height="55" rx="8" fill="#2a4a3a" stroke="#4ade80" stroke-width="1"/>
+  <text x="370" y="140" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#4ade80">⚙️ Odometer</text>
+  <text x="370" y="157" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#86efac">Hjulpulser</text>
+
+  <rect x="440" y="115" width="110" height="55" rx="8" fill="#2a3a4a" stroke="#60a5fa" stroke-width="1"/>
+  <text x="495" y="140" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#60a5fa">🔐 ERTMS</text>
+  <text x="495" y="157" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#93c5fd">EVC (der tilgjengelig)</text>
+
+  <rect x="565" y="115" width="110" height="55" rx="8" fill="#2a4a3a" stroke="#4ade80" stroke-width="1"/>
+  <text x="620" y="140" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#4ade80">📱 IoT/div</text>
+  <text x="620" y="157" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#86efac">Tablets, PAX-tell</text>
+
+  <!-- Arrows down from sensors to fusion -->
+  <line x1="120" y1="170" x2="120" y2="190" stroke="#4ade80" stroke-width="1" opacity="0.6"/>
+  <line x1="245" y1="170" x2="245" y2="190" stroke="#4ade80" stroke-width="1" opacity="0.6"/>
+  <line x1="370" y1="170" x2="370" y2="190" stroke="#4ade80" stroke-width="1" opacity="0.6"/>
+  <line x1="495" y1="170" x2="495" y2="190" stroke="#60a5fa" stroke-width="1" opacity="0.6"/>
+  <line x1="620" y1="170" x2="620" y2="190" stroke="#4ade80" stroke-width="1" opacity="0.6"/>
+
+  <!-- Fusion box -->
+  <rect x="180" y="190" width="440" height="60" rx="10" fill="#3d1f6d" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="400" y="218" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#e0d4ff">⚡ SENSORFUSJON + ASSIGNMENT</text>
+  <text x="400" y="238" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#c4b5fd">Posisjon (best av N) + «Jeg utfører nå ServiceJourney 456»</text>
+
+  <!-- Arrow out of vehicle box -->
+  <line x1="400" y1="270" x2="400" y2="295" stroke="#a78bfa" stroke-width="2" filter="url(#glow)"/>
+  <polygon points="393,290 400,300 407,290" fill="#a78bfa"/>
+
+  <!-- MESSAGE FORMAT -->
+  <rect x="250" y="300" width="300" height="70" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="270" y="322" font-family="monospace" font-size="9" fill="#fbbf24">{ vehicle_id, position,</text>
+  <text x="270" y="337" font-family="monospace" font-size="9" fill="#fbbf24">  confidence: 0.97,</text>
+  <text x="270" y="352" font-family="monospace" font-size="9" fill="#fbbf24">  assignment: { service_journey,</text>
+  <text x="270" y="367" font-family="monospace" font-size="9" fill="#fbbf24">    status: "IN_PROGRESS" } }</text>
+
+  <!-- Three recipients -->
+  <!-- Arrow left -->
+  <line x1="310" y1="370" x2="180" y2="420" stroke="#f59e0b" stroke-width="1" opacity="0.7"/>
+  <!-- Arrow center -->
+  <line x1="400" y1="370" x2="400" y2="420" stroke="#f59e0b" stroke-width="1" opacity="0.7"/>
+  <!-- Arrow right -->
+  <line x1="490" y1="370" x2="620" y2="420" stroke="#f59e0b" stroke-width="1" opacity="0.7"/>
+
+  <!-- Recipient: Entur -->
+  <rect x="80" y="420" width="200" height="65" rx="10" fill="#1e3a2a" stroke="#34d399" stroke-width="1.5"/>
+  <text x="180" y="448" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#34d399">📢 Entur (distribusjon)</text>
+  <text x="180" y="466" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#6ee7b7">Mottar → publiserer SIRI</text>
+  <text x="180" y="479" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#6ee7b7">Ingen inferens, ingen blackbox</text>
+
+  <!-- Recipient: Trafikkstyring -->
+  <rect x="300" y="420" width="200" height="65" rx="10" fill="#1e2a3a" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="400" y="448" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#38bdf8">🎯 Trafikkstyring</text>
+  <text x="400" y="466" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#7dd3fc">Operativ oversikt</text>
+  <text x="400" y="479" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#7dd3fc">Kapasitetsstyring</text>
+
+  <!-- Recipient: Bane NOR -->
+  <rect x="520" y="420" width="200" height="65" rx="10" fill="#2a1e1e" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="620" y="448" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#fb923c">✅ Bane NOR (validering)</text>
+  <text x="620" y="466" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#fdba74">Sammenligner med sporfelt</text>
+  <text x="620" y="479" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#fdba74">Flagger avvik</text>
+
+  <!-- Bottom label -->
+  <text x="400" y="510" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#666" font-style="italic">Operatøren deklarerer — plattformen distribuerer — IM validerer</text>
+</svg>
