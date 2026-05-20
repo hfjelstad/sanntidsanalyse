@@ -4,6 +4,9 @@
 > 
 > Oslo S – Lillehammer | Mai 2026
 
+> Vi driver sanntidsinformasjon i 2026 på en sensor designet for blokkbeskyttelse i 1872.
+> **Du kan ikke digitalisere deg ut av et datakvalitetsproblem.**
+
 ---
 
 ## 🎯 Kjerneproblemet
@@ -214,6 +217,24 @@ Ved brudd splittes én elegant pendel i et lappeteppe av fragmenter:
 
 ---
 
+## 🎯 Hvorfor fungerer det likevel?
+
+Systemet *fungerer* — mesteparten av tiden. Det er ikke flaks. Det er tiår med perfeksjonert inferens:
+
+| Faktor | Hvorfor det redder situasjonen |
+|--------|-------------------------------|
+| **Sekvensiell fysikk** | Tog beveger seg langs spor i én retning. Blokk 41 → 42 → 43 = åpenbart ett tog nordover. Ingen ID nødvendig. |
+| **Lav tvetydighet** | Dovrebanen: 1–2 tog per time per retning. Forveksling er usannsynlig *når planen holder*. |
+| **Stasjoner som reset** | Ved hvert planlagt stopp «bekreftes» identiteten. Feil akkumulerer mellom stasjoner, men nullstilles ved dem. |
+| **Togledere som feilretting** | Når algoritmen feiler, korrigerer mennesker manuelt via radio. De *vet* hvem som er hvem. |
+| **Planen holder — vanligvis** | Ruteplanen stemmer >90 % av tiden. Da er utledningen korrekt. |
+
+> **Kjernen:** Systemet fungerer fordi normaldrift er forutsigbar. Ruteplanen *er* virkeligheten — nesten alltid. Inferensen er korrekt så lenge planen holder. Det er bare i avviket — de 5–10 % der alt avviker — at utledningen kollapser. Og det er *nøyaktig da* passasjeren trenger informasjon mest.
+
+Bane NOR har over tiår perfeksjonert kunsten å **utlede** togidentitet fra anonyme blokkokkupasjoner + ruteplan. Det er imponerende ingeniørkunst. Men det er og blir *inferens* — ikke *måling*. Forskjellen merkes bare i avviket. Men i avviket merkes den av **alle**.
+
+---
+
 ## 🤔 Hvorfor er det slik?
 
 Det er ikke et bevisst arkitekturvalg — det er **historisk arv**.
@@ -228,8 +249,6 @@ Da man senere ønsket sanntidsinformasjon til reisende, var sporfelter den **ene
 | Anonym (noe er der) | Identifisert (tog 61 passerte) |
 | Binær per blokk | Kontinuerlig sporing |
 | Fungerer uten ruteplan | Krever ruteplan for å gi mening |
-
-Vi driver sanntidsinformasjon i 2026 på en sensor designet for blokkbeskyttelse i 1872.
 
 ---
 
