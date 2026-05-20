@@ -233,4 +233,62 @@ Vi driver sanntidsinformasjon i 2026 på en sensor designet for blokkbeskyttelse
 
 ---
 
+## 📚 Kilder og referanser
+
+### Sporkrets / Track circuit
+
+| Påstand | Kilde |
+|---------|-------|
+| Oppfunnet av William Robinson i 1872 | American Railway Association (1922). *[The Invention of the Track Circuit](https://archive.org/details/inventionoftrack00newyrich)*. New York: ARA. Primærkilde — jubileumsskrift med patenthistorikk. |
+| Første bruk (ikke-failsafe) av W.R. Sykes, 1864 | Marshall, J. (1978). *A biographical dictionary of railway engineers*. David & Charles. p. 162. |
+| Deteksjonsmekanisme: «noe i sporet» → rødt signal | Bane NOR. [«Hva er signalfeil?»](https://www.banenor.no/nyheter-og-aktuelt/bane-nor-forklarer/signalfeil/) — *«Signaler forteller oss om det er tog ute i sporet. Av og til blir systemet lurt og tror det går trafikk på skinnene, uten at det stemmer.»* |
+| «Spøkelsestog»: spon over skjøt kortslutter sporfeltet | Ibid. *«Det kan skyldes spon fra skinnegangen som virvles opp når tog bremser, og som legger seg over en skjøt mellom skinnene. Systemet får da signaler om at det er noe i sporet og feiltolker det som tog.»* |
+
+### Armagh-ulykken og lovpålagt blokkbeskyttelse
+
+| Påstand | Kilde |
+|---------|-------|
+| Armagh-ulykken 12. juni 1889 | Maj-Gen C.S. Hutchinson. *[Report into the collision near Armagh](http://www.railwaysarchive.co.uk/documents/BoT_Armagh1889.pdf)*, Board of Trade, 1889. Primærkilde. |
+| Førte til Regulation of Railways Act 1889 | *[Regulation of Railways Act 1889](https://www.legislation.gov.uk/ukpga/Vict/52-53/57/contents)*, c. 57. UK Parliament. Lovpåla automatisk brems, blokkering og forrigling. |
+
+### ERTMS/ETCS i Norge
+
+| Påstand | Kilde |
+|---------|-------|
+| Regjeringsbeslutning om ERTMS (2012) | Samferdselsdepartementet. [«ERTMS – orientering om regjeringens beslutning»](https://www.regjeringen.no/globalassets/upload/sd/vedlegg/jernbane/ertms_jbv.pdf), 2012. |
+| Østfoldbanens østre linje: første ETCS i Norge (2015) | Bane NOR. [«Fortellingen om jernbanen som måtte bli digital»](https://www.banenor.no/prosjekter/alle-prosjekter/ertms-fremtidens-signalsystem/aktuelt-om-ertms/fortellingen-om-jernbanen-som-matte-bli-digital/) — *«I 2015 tok vi i bruk ERTMS på Østfoldbanens østre linje.»* |
+| Gjøvikbanen: ERTMS november 2024 | Ibid. *«I november 2024 fikk Gjøvikbanen også ERTMS, på strekningen mellom Roa og Gjøvik.»* |
+| Utrulling forsinket: alle tre leverandører melder forsinkelser | Bane NOR. [«Usikker fremdrift for nytt signalsystem»](https://www.banenor.no/prosjekter/alle-prosjekter/ertms-fremtidens-signalsystem/aktuelt-om-ertms/usikker-framdrift-for-nytt-signalsystem/) |
+| Signalanlegg fra 1950-tallet, Oslo S fra 1977 | Bane NOR (ibid. «Fortellingen…»). *«De eldste av disse er fra starten av 1950-tallet»*, *«Oslo S: signalanlegget fra 1977»*. |
+
+### Sikringsanlegg og togdeteksjon
+
+| Påstand | Kilde |
+|---------|-------|
+| Sikringsanlegget overvåker infrastrukturens sikkerhet | Bane NOR. [«Hva er signalfeil?»](https://www.banenor.no/nyheter-og-aktuelt/bane-nor-forklarer/signalfeil/) — *«Vi har et system som kalles sikringsanlegg på jernbanen. Det overvåker alle deler av infrastrukturen som har med sikkerheten å gjøre.»* |
+| Feil → rødt signal → all trafikk stanses | Ibid. *«Hvis sikringsanlegget oppdager feil på enkelte komponenter, fører det til at signalanlegget gir togene rødt lys.»* |
+| 75 % av togtrafikk via Oslo S → nasjonal sårbarhet | Ibid. *«Nesten 75 prosent av all togtrafikk i Norge går innom Oslo S. Feil i dette området påvirker over 80 prosent av togtrafikken nasjonalt.»* |
+
+### SIRI-standard (nordisk profil)
+
+| Påstand | Kilde |
+|---------|-------|
+| SIRI (Service Interface for Real Time Information) | CEN/TS 15531-1:2006 t.o.m. CEN/TS 15531-5:2006. Europeisk standard for sanntidsinformasjon i kollektivtransport. |
+| Nordisk profil for SIRI ET og VM (versjon 1.0, 1.1) | Entur. [Nordic SIRI Profile](https://entur.atlassian.net/wiki/spaces/PUBLIC/pages/637370420/SIRI) — profildokumenter for [SIRI-ET](https://entur.atlassian.net/wiki/spaces/PUBLIC/pages/637370392/SIRI-ET) og [SIRI-VM](https://entur.atlassian.net/wiki/spaces/PUBLIC/pages/637370425/SIRI-VM). |
+| Krav om sanntidsleveranse | Jernbanedirektoratet. *Håndbok for bestilling av persontransport med tog*, vedlegg om sanntidsinformasjon. |
+
+### Sensorutstyr ombord
+
+| Påstand | Kilde |
+|---------|-------|
+| WiFi-router med GPS på togsett | Norske Tog / Vy: Flåtespesifikasjoner for BM74/BM75/BM76. Icomera/Nomad Digital WiFi-systemer med integrert GPS. |
+| Odometer på alle togsett | Standard jernbaneutstyr. Brukes bl.a. for ETCS-posisjonering (jf. ERTMS/ETCS System Requirements Specification, SUBSET-026 §4.3.1 «Odometry»). |
+| GPS i sikringsskap | Nyere materiell (Flirt, Flirt Akku) har dedikerte GPS-moduler. Stadler Rail AG, flåtespesifikasjoner. |
+
+---
+
+> **Merk:** Kilder merket med direkte sitat er offentlig tilgjengelige. For Jernbanedirektoratets Håndbok og flåtespesifikasjoner fra Norske Tog/Stadler henvises det til aktørenes egne arkiver.
+
+---
+
 *📎 Løsningsforslag: se [sammenstilling.md](sammenstilling.md)*
